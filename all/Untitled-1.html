@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 800px;
+            width: 100%;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .form-container form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-container label {
+            margin-bottom: 8px;
+        }
+
+        .form-container input,
+        .form-container textarea {
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 1px solid #ddd;
+        }
+
+        .image-container {
+            flex: 1;
+            overflow: hidden;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
+    <title>Form Next to Photo</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="form-container">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Type your message here"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div class="image-container">
+            <img src="your-photo.jpg" alt="Your Photo">
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
